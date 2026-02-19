@@ -1,0 +1,148 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata4/sap/yui011595_useranaly/srvd/sap/yod011595_useranaly/0001/$metadata">
+        <edmx:Include Namespace="com.sap.gateway.srvd.yod011595_useranaly.v0001" Alias="SAP__self"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="SAP__self.YCDSC011595_UserDocSumType">
+                <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="UserName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>totaldocumentcount}"/>
+                                    <PropertyValue Property="Value" Path="TotalDocumentCount"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>ficount1}"/>
+                                    <PropertyValue Property="Value" Path="FI_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>mmcount1}"/>
+                                    <PropertyValue Property="Value" Path="MM_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>mmimcount1}"/>
+                                    <PropertyValue Property="Value" Path="MM_IM_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>sdcount1}"/>
+                                    <PropertyValue Property="Value" Path="SD_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>sddlcount1}"/>
+                                    <PropertyValue Property="Value" Path="SD_DL_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>ppcount1}"/>
+                                    <PropertyValue Property="Value" Path="PP_Count"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>firstdocumentdate}"/>
+                                    <PropertyValue Property="Value" Path="FirstDocumentDate"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>lastdocumentdate}"/>
+                                    <PropertyValue Property="Value" Path="LastDocumentDate"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="ID" String="GeneratedFacet1"/>
+                            <PropertyValue Property="Label" String="{@i18n>generalInformation}"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneratedGroup"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="UserName"/>
+                            <PropertyValue Property="Label" String="{@i18n>key}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="FullName"/>
+                            <PropertyValue Property="Label" String="{@i18n>fullname}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="{@i18n>totaldocumentcount}"/>
+                            <PropertyValue Property="Value" Path="TotalDocumentCount"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SD_Count"/>
+                            <PropertyValue Property="Label" String="{@i18n>sdcount}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SD_DL_Count"/>
+                            <PropertyValue Property="Label" String="{@i18n>sddlcount}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="{@i18n>mmcount}"/>
+                            <PropertyValue Property="Value" Path="MM_Count"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="{@i18n>mmimcount}"/>
+                            <PropertyValue Property="Value" Path="MM_IM_Count"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PP_Count"/>
+                            <PropertyValue Property="Label" String="{@i18n>ppcount}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="{@i18n>ficount}"/>
+                            <PropertyValue Property="Value" Path="FI_Count"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="FirstDocumentDate"/>
+                            <PropertyValue Property="Label" String="{@i18n>firstdocumentdate}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="LastDocumentDate"/>
+                            <PropertyValue Property="Label" String="{@i18n>lastdocumentdate}"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>UserName</PropertyPath>
+                        <PropertyPath>FullName</PropertyPath>
+                        <PropertyPath>TotalDocumentCount</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="UserName"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="TypeName" String=""/>
+                        <PropertyValue Property="TypeNamePlural" String=""/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.YCDSC011595_UserDocSumType/TotalDocumentCount">
+                <Annotation Term="Common.Label" String="{@i18n>totaldocumentcount}"/>
+            </Annotations>
+            <Annotations Target="SAP__self.YCDSC011595_UserDocSumType/UserName">
+                <Annotation Term="Common.Label" String="{@i18n>key}"/>
+            </Annotations>
+            <Annotations Target="SAP__self.YCDSC011595_UserDocSumType/FullName">
+                <Annotation Term="Common.Label" String="{@i18n>fullname}"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
